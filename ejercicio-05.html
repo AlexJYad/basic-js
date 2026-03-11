@@ -1,0 +1,32 @@
+<!-- // ### Ejercicio 5: Años para jubilarse
+
+// Pide al usuario que introduzca su edad con `prompt()`.
+// Calcula cuántos años le quedan para jubilarse, sabiendo que la edad de jubilación es 67 años.
+// Muestra el resultado con `alert()`.
+
+// **Pista:** el valor que devuelve `prompt()` es siempre un string, aunque el usuario escriba un número. Busca cómo convertirlo a número antes de operar.
+// **Documentación:** [Number()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/Number) · [parseInt()](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      let edad = parseInt(prompt("Introduce tu edad: "));
+      let jubilarse = 67;
+      let años = jubilarse - edad;
+      if (años > 0) {
+         alert("Te quedan " + (años) + " años para jubilarte");
+      } else {
+         alert("¡Ya estás jubilado!");
+      }
+   </script>
+</body>
+
+</html>
