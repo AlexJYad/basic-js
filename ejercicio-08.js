@@ -15,7 +15,7 @@
 const prompt = require("prompt-sync")();
 
 // Code
-let edad = parseInt(prompt("Edad:"));
+let edad = parseInt(prompt("Edad: "));
 let bebida = prompt("Bebida: ");
 
 if (bebida !== "leche" && edad < 15) {
