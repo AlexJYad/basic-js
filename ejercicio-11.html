@@ -1,0 +1,37 @@
+<!-- ### Ejercicio 11: Letter Quizz
+
+Escribe un programa que:
+
+1. Pida al usuario una cadena de texto con `prompt()`.
+2. Genere un carácter aleatorio (una letra del abecedario).
+3. Compruebe si la cadena introducida contiene ese carácter.
+4. Muestre `true` o `false` con `alert()`.
+
+**Pista:** para generar una letra aleatoria puedes partir de un string con todas las letras del abecedario (como un
+array o una cadena) y elegir uno de sus elementos aleatoriamente con `Math.random()`.
+**Documentación:** `Math.random()` · `String.includes()` · `String.charAt()` -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      let texto = prompt("texto: ")
+      let max = 26;
+      // let chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+      // let char = chars[Math.floor(Math.random() * max)];
+      let chars = "abcdefghijklmnñopqrstuvwxyz".split('');
+      let char = chars[Math.floor(Math.random() * chars.length)];
+      alert(char + " : " + texto.toLowerCase().includes(char))
+
+      //abcdifghijklmnopqrstuvwxyz
+   </script>
+</body>
+
+</html>
